@@ -1,0 +1,217 @@
+/*font-familiy: Inter , Roboto, dancing script*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin:0;
+    
+}
+.hero-container{
+    display: grid;
+    grid-template-columns: minmax(200px,600px) 1fr;
+}
+.hero-section-1{
+    background-color:#20c996;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hero-section-2{
+    background-color:#f8f9fa;
+    min-height: 100vh;
+}
+.logo{
+    /* background-color: beige; */
+  
+}
+.logo h1{
+    font-family: 'dancing script';
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    /* color:#495057; */
+    color:#6C63FF;
+}
+p{
+    font-family:'Roboto';
+    font-size:14px;
+
+}
+.signup-span a,.login-span a{
+    color:#6C63FF;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+}
+.signup-form-wrapper,.login-form-wrapper{
+    
+    margin-top: 100px;
+   
+}
+.signup-form,.login-form{
+    
+    max-width: 380px;
+    margin: 0 auto;
+   
+}
+.signup-form form,.login-form form{
+    width:100%;
+}
+.signup-form form div,.login-form form div{
+    width:100%;
+    height:53px;
+    margin-bottom: 10px;
+}
+input{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:0.1px solid #4950576a;
+    border-radius: 10px;
+    padding:3px 3px 3px 8px;
+    font-family: 'Roboto';
+}
+.submit-btn input{
+    background-color: #20c996cd;
+}
+.signup-span,.login-span{
+    display: inline-block;
+}
+.note-signup,.note-login{
+    margin-top: 10px;
+    padding:5px;
+}
+.password{
+    position:relative;
+}
+.eye-password{
+    position:absolute;
+    width:30px !important;
+    height:max-content !important;
+    top:50%;
+    transform: translateY(-50%);
+    right:5px;
+    cursor: pointer;
+    
+
+   
+   
+
+}
+.submit-btn input{
+    border: 0;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #212529;
+    font-weight: 400;
+}
+
+.eye-close{
+    width:25px;
+    height:23px;
+    color:#495057;
+   display: block;
+   
+}
+.eye-open{
+    width:25px;
+    height:23px;
+    color:#495057;
+    display:none;
+}
+.eye-close-state{
+    display:none;
+}
+.eye-open-state{
+    display:block;
+}
+img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.hero-img{
+    max-width:360px;
+    width:100%;
+    height:400px;
+    flex-basis: 100%;
+ 
+    margin:0 auto;
+
+}
+.content-1{
+    /* display:flex;
+    align-items: center; */
+    
+    /* min-height: 100%; */
+    /* justify-content: center;
+    flex-wrap: wrap;
+    gap: 0; */
+    flex-basis: 100%;
+    
+}
+.desc{
+    
+    /* background-color: #6C63FF; */
+    margin:0 auto;
+    padding:10px;
+    text-align: center;
+  max-width: 360px;
+  width:100%;
+  font-weight: 400;
+    margin: 0 auto;
+    font-family: 'Inter';
+    line-height: 1.6;
+    font-size: 18px;
+    color: #212529;
+ 
+ 
+}
+.arrow-1{
+    width:100px;
+    height:2px;
+    background-color:yellow;
+    position: absolute;
+    top:100%;
+    right:30px;
+    border-radius: 100%;
+    transform: rotate(-10deg);
+}
+.arrow-2{
+    width:100px;
+    height:2px;
+    background-color:rgba(255, 255, 0, 0.662);
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 100%;
+    transform: rotate(-10deg);
+}
+
+.desc-p{
+    max-width: 360px;
+    margin:0 auto;
+    position:relative;
+    
+}
+.login-err,.signup-err{
+    font-family: 'Roboto';
+    font-size: 14px;
+    color:#fa5252;
+    text-align: center;
+    display: none;
+}
+.login-err-state,.signup-err-state{
+    display: block;
+}
+.submit-btn input{
+    cursor: pointer !important;
+}
+input:focus{
+    border:0.2px solid  #20c996cd;
+}
